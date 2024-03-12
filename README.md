@@ -19,6 +19,25 @@ Este projeto é uma aplicação web desenvolvida com React que permite aos usuá
 - **Axios**: Cliente HTTP baseado em promessas para o navegador e node.js, utilizado para fazer requisições à API.
 - **CSS**: Para estilização dos componentes.
 
+- ## Banco de Dados
+
+Este projeto utiliza um banco de dados para armazenar informações dos clientes, como nome, email, telefone, latitude e longitude. A seguir, está a DDL (Data Definition Language) para a criação da tabela necessária para armazenar os dados dos clientes.
+
+### Estrutura da Tabela de Clientes
+
+Execute a seguinte DDL SQL no seu sistema de gerenciamento de banco de dados para criar a tabela de clientes:
+
+```sql
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    latitude DECIMAL(10, 8) NOT NULL,
+    longitude DECIMAL(11, 8) NOT NULL
+);
+
+
 ## Pré-requisitos
 
 Antes de iniciar, você precisará ter instalado em sua máquina as seguintes ferramentas:
